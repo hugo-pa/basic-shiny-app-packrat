@@ -1,4 +1,4 @@
-# RStudio Project Example
+# RStudio Project Example (with `packrat`)
 This repository contains a basic, demonstrative example for an [RStudio Community forum post] relating to calling `rsconnect::writeManifest` from projects using [`packrat`]. 
 
 ## Problem Description
@@ -18,15 +18,15 @@ data.frame(Source = source, Repository = repository)
 
 A detailed discussion of the issue can be found on the [RStudio Community forum post].
 
-This repository contains an example project that _does not_ use `packrat`.
+This repository contains an example project that _does_ use `packrat`.
 
 ## Running the Example
 
 1. Open `basic-shiny-app-packrat.Rproj` in RStudio.
 
-2. If not already installed, install the `rsconnect` package (i.e. `install.packages("rsconnect")`).
+2. Wait for `packrat` initialization to complete
 
-3. Call `rsconnect::writeManifest()`; the call should succeed without any errors.
+3. Call `rsconnect::writeManifest()`; the call should fail with the above error.
 
 
 [RStudio Community forum post]: https://community.rstudio.com/t/rsconnect-writemanifest-fails-in-projects-using-packrat/36634
