@@ -24,9 +24,11 @@ This repository contains an example project that _does_ use `packrat`.
 
 1. Open `basic-shiny-app-packrat.Rproj` in RStudio.
 
-2. Wait for `packrat` initialization to complete
+2. Wait for `packrat` initialization to complete.
 
-3. Call `rsconnect::writeManifest()`; the call should fail with the above error.
+3. Call `packrat::restore()`.
+
+4. Call `rsconnect::writeManifest()`; the call should fail with the above error.
 
 
 [RStudio Community forum post]: https://community.rstudio.com/t/rsconnect-writemanifest-fails-in-projects-using-packrat/36634
